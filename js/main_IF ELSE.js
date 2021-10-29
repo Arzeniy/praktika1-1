@@ -50,17 +50,16 @@ var app1 = new Vue({
 })
 
 var app2 = new Vue({
-    el:'#n3',
+    el:'#n7',
     data:{
         age:"",
         allow:"",
     },
     methods:{
-        checkAge: function(){
-            this.age=2021-this.age
-            if (this.age >= 16)
-                this.allow = "Добро пожаловать!!"
-            else if(this.age>0 && this.age<16)
+        checkAge: function(vik){
+            if (vik >= 16)
+                this.allow = "Добро пожаловать!"
+            else if(vik>0 && this.age<16)
                 this.allow = "Подрости чуток"
             else
                 this.allow = "Прости, но тебе минимум 9 месяцев"

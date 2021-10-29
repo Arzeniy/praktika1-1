@@ -24,9 +24,9 @@
         </div>
         <div id="n3" >
             <h2>Задание 3</h2>
-            Введите свой возраст:<br>
-            <p><input type="text" v-model="age" ></input></p>
-            <button v-on:click="checkAge">Ввести</button>
+            Введите возраст
+            <input type="text" v-model="age"></input>
+            <button v-on:click="checkAge(age)">Проверка</button>
             <h3>{{allow}}</h3>
         </div>
         <div id="n4" >
